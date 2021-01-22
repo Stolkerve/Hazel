@@ -21,7 +21,11 @@ namespace Hazel
 			ButtonLast             = Button7,
 			ButtonLeft             = Button0,
 			ButtonRight            = Button1,
-			ButtonMiddle           = Button2
+			ButtonMiddle           = Button2,
+			
+			MouseNormal            = 0x00034001,
+			MouseHidden            = 0x00034002,
+			MouseCaptured          = 0x00034003
 		};
 	}
 }
