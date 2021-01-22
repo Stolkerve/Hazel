@@ -13,6 +13,7 @@ namespace Hazel {
 		static bool IsKeyPressed(KeyCode key);
 
 		static bool IsMouseButtonPressed(MouseCode button);
+		static void SetMouseMode(MouseCode mode);
 		static glm::vec2 GetMousePosition();
 		static float GetMouseX();
 		static float GetMouseY();
