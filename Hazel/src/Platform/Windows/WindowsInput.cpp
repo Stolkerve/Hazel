@@ -20,6 +20,11 @@ namespace Hazel {
 		return state == GLFW_PRESS;
 	}
 
+	void Input::SetMouseMode(MouseCode mode)
+	{
+		glfwSetInputMode(static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow()), GLFW_CURSOR, mode);
+	}
+	
 	glm::vec2 Input::GetMousePosition()
 	{
 		auto* window = static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow());
